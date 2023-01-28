@@ -7,6 +7,11 @@ class User {
   public $name;
 
 // Functions //
+  
+  function __construct($name, $id){
+    $this->name = $name;
+    $this->id = $id;
+  }
 
   function set_name($name) {
     $this->name = $name;
