@@ -32,14 +32,8 @@ class AdvertisementService{
 
         foreach($records as $row){
 
-            $advert = new Advertisement();
-            $advert->set_title($row["title"]);
-            $advert->set_id($row["advertid"]);
-
-            $user = new User();
-            $user->set_name($row["name"]);
-            $user->set_id($row["id"]);
-            $advert->set_user($user);
+            $user = new User($row["name"], $row["id"]);
+            $advert = new Advertisement($row["title"], $row["id"], $user);
 
             $advertisements[] = $advert;
         }
