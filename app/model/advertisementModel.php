@@ -8,6 +8,12 @@ class Advertisement {
   public $user;
 
 // Functions //
+  
+  function __construct($title, $id, $user){
+  $this->title = $title;
+  $this->id = $id;
+  $this->user = $user;
+}
 
   function set_title($title) {
     $this->title = $title;
