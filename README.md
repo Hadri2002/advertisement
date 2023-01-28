@@ -38,3 +38,44 @@ The PHP application covers the following points:
 ![image](https://user-images.githubusercontent.com/93373919/215270198-d74ded8a-13f3-417d-93f5-62d497ad10ed.png)
 ![image](https://user-images.githubusercontent.com/93373919/215270208-e5aa9b5e-b092-42d5-af3c-8fb305aaf5c4.png)
 
+# Function
+
+## UserModel
+
+An entity class to model the users
+
+Attributes:
+* id
+* name
+
+## AdvertisementModel
+
+An entity class to model the ads
+
+Attributes:
+* id
+* title
+* user
+
+## UserService
+
+The business logic used to communicate with the database
+
+Functions:
+* getAllUsers - gets all users from the table using an SQL query
+
+## AdvertisementService
+
+The business logic used to communicate with the database
+
+Functions:
+* getAllAdvertisement - gets all ads from the table using an SQL query
+
+## UserView
+
+html base that's ready to accept the list of users
+
+## AdvertisementView
+
+html base that's ready to accept the list of ads
+
