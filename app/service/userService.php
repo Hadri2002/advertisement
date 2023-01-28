@@ -29,11 +29,8 @@ class UserService{
         $records = $query -> fetchAll(PDO::FETCH_ASSOC);
 
         foreach($records as $row){
-          //echo "id: " . $row["id"]. " - Name: " . $row["name"] . "<br>";
-
-            $user = new User();
-            $user->set_name($row["name"]);
-            $user->set_id($row["id"]);
+          
+            $user = new User($row["name"], $row["id"]);
 
               $users[] = $user;
         }
