@@ -69,7 +69,7 @@ Functions:
 The business logic used to communicate with the database
 
 Functions:
-* getAllAdvertisement - gets all ads from the table using an SQL query
+* getAllAdvertisements - gets all ads from the table using an SQL query
 
 ## UserView
 
